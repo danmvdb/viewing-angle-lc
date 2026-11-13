@@ -1,0 +1,16 @@
+# First-order boundary and source quadrupole distortions about a sphere.
+fit_type: slightly_oblate
+url: analytic_LC
+tbar: 5.96e+12                  # equal-volume v_o^2/D [s^2]
+Mni56: 9.945e+32                # 0.5 Msun [g]
+xs: 0.8435
+eps: -0.06                     # boundary distortion; negative means oblate
+eps_s: -0.03                   # source distortion; negative means oblate
+tdep: 35.0                     # days; null for full trapping
+fdep_file: null
+tmax: 80.0                     # days
+Nt: 8000
+oversample: 32
+nmax: 200                      # radial roots in each of l=0 and l=2
+observer: centre
+cos_theta_edges: [-1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0]

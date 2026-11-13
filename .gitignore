@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+# run outputs
+analytic_LC.npz
+analytic_LC_config.yaml
+
+# macOS metadata
+.DS_Store
+._*

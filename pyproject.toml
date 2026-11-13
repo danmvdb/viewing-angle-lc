@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analytic-viewing-angle-lightcurves"
+version = "1.0.0"
+description = "Analytic bolometric diffusion light curves for spherical and oblate ejecta"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.21", "scipy>=1.8", "PyYAML>=6"]
+
+[tool.setuptools]
+py-modules = ["_diffusion_common", "run_experiment"]
+packages = ["spherical_diffusion_solutions", "oblate_diffusion_solutions"]

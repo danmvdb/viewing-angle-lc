@@ -1,0 +1,19 @@
+# Spherical ejecta with a displaced spherical source: the analytic calculation
+# of Fig. 2 of the paper (M = 1.006 Msun, v_o = 12906 km/s, kappa = 0.2 cm^2/g).
+fit_type: sphere
+url: analytic_LC
+tbar: 7408376170266.691           # diffusion scale v_o^2/D [s^2] (ttilde = 31.503 d)
+Mni56: 1.2012000000000002e+33     # 0.6039 Msun [g]
+xs: 0.8435498098224316           # source radius / ejecta radius
+z_ig: 0.09985858534149691         # source offset / ejecta radius
+tdep: null                      # complete deposition, f_dep = 1, as in Fig. 2. For partial
+                                # gamma-ray trapping give the escape time t0 [days], which
+                                # sets f_dep(t) = 1 - exp(-t0^2/t^2) (e.g. tdep: 30.0)
+fdep_file: null                 # optional (time [s], fraction) table; requires tdep: null
+tmax: 80.0                      # days
+Nt: 8000
+oversample: 32
+lmax: 100
+nmax: 100
+observer: centre                # centre or bin
+cos_theta_edges: [-1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0]

@@ -1,0 +1,25 @@
+# Oblate ejecta with a centred, non-confocal oblate source: the analytic
+# calculation of Fig. 3 of the paper (uniform ejecta, M = 1.401 Msun,
+# a = 8527 km/s, kappa = 0.2 cm^2/g). Supports f != 1.
+fit_type: oblate
+url: analytic_LC
+tbar: 6910416379276.568           # a^2/D [s^2], a = ejecta focal length (ttilde = 30.426 d)
+Mni56: 5.051905e+32               # 0.2540 Msun [g]
+mu_s: 0.9244589415340018         # xi_s: ejecta spheroidal coordinate
+mu_1: 0.704902696215009          # xi1: source spheroidal coordinate
+f: 0.6965737272308742            # source/ejecta focal-length ratio
+tdep: null                      # complete deposition, f_dep = 1, as in Fig. 3. For partial
+                                # gamma-ray trapping give the escape time t0 [days], which
+                                # sets f_dep(t) = 1 - exp(-t0^2/t^2) (e.g. tdep: 40.0)
+fdep_file: null                 # optional (time [s], fraction) table; requires tdep: null
+tmax: 80.0                      # days
+Nt: 8000
+oversample: 32
+nmax: 100                       # even angular indices 0, 2, ..., 100
+pmax: 200                       # radial roots per angular index
+nleg: null                      # adaptive Legendre basis
+n_src: 400
+n_norm: 800
+n_split: 160
+observer: centre
+cos_theta_edges: [-1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
